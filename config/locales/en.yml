@@ -1,33 +1,39 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
   hello: "Hello world"
+  layouts:
+    application:
+      title: " Ruby on Rails Tutorial Sample App"
+  static_pages:
+    home:
+      home_title: "Home" 
+      heading: "Welcome to the Sample App"
+      description_title: "This is the home page for the"
+      description_detail: "sample application."
+    help:
+      help_title: "Help"
+      heading: "Help"
+      description_title: "Get help on the Ruby on Rails Tutorial at the"
+    contact:
+      contact_title: "Contact"
+      heading: "Contact"
+      contact_desc: "Contact the Ruby on Rails Tutorial about this sample app at"
+      ruby_on_rails_contact: "contact page"
+    about:
+      about_title: "About"
+      about_heading: "About"
+      about_desc_a: "The"
+      about_desc_b: ", part of the"
+      about_desc_c: "family of tutorials, is a"
+      about_desc_d: "and"
+      about_desc_e: "to teach web development with"
+      about_desc_f: ". This is the sample app for the tutorial."
+      learn_enough: "Learn Enough"
+      book: "book"
+      screen: "screencast series"
+
+  ruby_on_rails: "Ruby on Rails"
+  ruby_on_rails_tut: "Ruby on Rails Tutorial"
+  rails_tut_help: "Rails Tutorial Help Page"
+  ruby_on_rails_tut_book: "Ruby on Rails Tutorial book"
+  ruby_on_rails_tut_author: "Michael Hartl"
+
