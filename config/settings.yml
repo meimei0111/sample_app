@@ -1,0 +1,12 @@
+links:
+  rails_tutorial:
+    home_page: http://www.railstutorial.org/
+    help_page: http://www.railstutorial.org/help
+    help_book: http://www.railstutorial.org/book
+    contact: https://www.railstutorial.org/contact    
+    news: https://news.learnenough.com
+    author: https://www.michaelhartl.com
+    screencast: https://www.learnenough.com/courses
+    ruby_on_rails: https://rubyonrails.org/
+    end
+end
