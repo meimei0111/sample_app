@@ -1,6 +1,6 @@
 en:
   hello: "Hello world"
-
+  
   layouts:
     application:
       title: "Sample App"

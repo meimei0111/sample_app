@@ -8,3 +8,12 @@ links:
     author: https://www.michaelhartl.com
     screencast: https://www.learnenough.com/courses
     ruby_on_rails: https://rubyonrails.org/
+
+validations:
+  name:
+    max_length: 50
+  email:
+    max_length: 225
+    regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i'
+  password:
+    min_length: 6
