@@ -8,6 +8,7 @@ links:
     author: https://www.michaelhartl.com
     screencast: https://www.learnenough.com/courses
     ruby_on_rails: https://rubyonrails.org/
+  gravatar: https://secure.gravatar.com/avatar/
 
 validations:
   name:

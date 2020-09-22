@@ -52,7 +52,13 @@ en:
       screen: "screencast series"
 
   users:
+    user_not_found: "User not found"
     new:
       sign_up_title: "Sign Up"
       heading: "Sign Up"
       description_title: "This will be a sign up page for new users."
+      sign_up_create: "Create my account"
+      confirmation: "Confirmation"
+    create:
+      success_mess_create: "Welcome to Sample App!"
+      fail_mess_create: "Account created fail !!!"
