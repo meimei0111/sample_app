@@ -8,7 +8,9 @@ links:
     author: https://www.michaelhartl.com
     screencast: https://www.learnenough.com/courses
     ruby_on_rails: https://rubyonrails.org/
-  gravatar: https://secure.gravatar.com/avatar/
+  gravatar: 
+    secure: https://secure.gravatar.com/avatar/
+    emails: http://gravatar.com/emails
 
 validations:
   name:
@@ -21,3 +23,7 @@ validations:
 
 collections:
   session_controller_create: 1
+  gravatar:  
+    size:
+      default: 80
+      list: 50
