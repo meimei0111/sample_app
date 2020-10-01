@@ -107,6 +107,7 @@ en:
       btn_signup: "New User ?"
       signup_now: "Sign Up Now!"
       remember_user: "Remember me in this computer"
+      forgot_password: " Forget Password?"
 
 user_mailer:
     account_activation:
@@ -117,12 +118,38 @@ user_mailer:
       greeting: "Hi"
     password_reset:
       heading: "Password reset"
+      password_reset: "Password reset"
       greeting: "Hi"
       reset_link: "Reset Password"
-      intro: "To reset your password click the link below:"
-      desc_a: ", find me in app/views/user_mailer/password_reset.html.erb"
-      desc_b: ", find me in app/views/user_mailer/password_reset.text.erb"
+
+      ps_reset_title: "To reset your password click the link below:"
+      reset_expired: "This link will expire in two hours."
+      reset_reminder: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+      ps_reset_mess: "Password reset"
 
   account_activations:
     success_mess_activation: "Success to activate account"
     fail_mess_activation: "INVALID activation"
+
+  password_resets:
+    create:
+      success_acct_sent: "Email sent with password reset instructions"
+      fail_acct_sent: "Email address not found"
+    update:
+      success_psword_update: "Password has been reset."
+      fail_ps_reset_mess: "Password reset fail"
+    valid_user:
+      fail_mess_ps_reset: "Password reset failed!"
+    check_expiration:
+      ps_expired_mess: "Password reset has expired."
+    edit:
+      heading: "Reset Password"
+      reset_title: "Reset password"
+    editform:
+      ps_reset_submit: "Update password"
+      confirmation: "Confirmation"
+    new:
+      fail_mess_create: "Password reset fail."
+      forgot_title: "Forgot pasword"
+      heading: "Forgot password"
+      forgot_submit: "Submit"
