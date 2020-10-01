@@ -20,7 +20,7 @@ Rails.application.configure do
 
     config.cache_store = :memory_store
     config.public_file_server.headers = {
-      'Cache-Control' => "public, max-age=#{2.days.to_i}"
+      "Cache-Control" => "public, max-age=#{2.days.to_i}"
     }
   else
     config.action_controller.perform_caching = false
@@ -31,8 +31,19 @@ Rails.application.configure do
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
 
-  # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+ # Send the mailer.
+  config.action_mailer.raise_delivery_errors = true
+
+  host = "localhost"
+  config.action_mailer.default_url_options = { host: host, port: "3000", protocol: "http" }
+  ActionMailer::Base.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: "587",
+    authentication: :plain,
+    user_name: ENV["HOST_NAME"],
+    password: ENV["HOST_PASSWORD"],
+    enable_starttls_auto:  true
+  }
 
   config.action_mailer.perform_caching = false
 

@@ -27,3 +27,4 @@ collections:
     size:
       default: 80
       list: 50
+  users_default_page: 10

@@ -72,6 +72,7 @@ en:
     newform:
       confirmation: "Confirmation"
     create:
+      acct_info: "PLease check your email to activate your account."
       success_mess_create: "Welcome to Sample App!"
       fail_mess_create: "Account created fail !!!"
     update:
@@ -100,8 +101,28 @@ en:
       heading: "Log In"
     create:
       fail_mess_session: "INVALID email or password combination !"
+      warn_mess_session: "Account not activated. Check your email for the activation link."
     newform:
       login: "Login"
       btn_signup: "New User ?"
       signup_now: "Sign Up Now!"
       remember_user: "Remember me in this computer"
+
+user_mailer:
+    account_activation:
+      acct_active: "Account activation"
+      heading: "Sample App"
+      introduction: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate_link: "Activate"
+      greeting: "Hi"
+    password_reset:
+      heading: "Password reset"
+      greeting: "Hi"
+      reset_link: "Reset Password"
+      intro: "To reset your password click the link below:"
+      desc_a: ", find me in app/views/user_mailer/password_reset.html.erb"
+      desc_b: ", find me in app/views/user_mailer/password_reset.text.erb"
+
+  account_activations:
+    success_mess_activation: "Success to activate account"
+    fail_mess_activation: "INVALID activation"
