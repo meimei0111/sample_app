@@ -28,3 +28,4 @@ collections:
       default: 80
       list: 50
   users_default_page: 10
+  psword_reset_expired_time_in_hours: 2
