@@ -31,6 +31,7 @@ en:
     home:
       home_title: "Home" 
       heading: "Welcome to the Sample App"
+      micropost_heading: "Micropost Feed"
       description_title: "This is the home page for the"
       description_detail: "sample application."
       sign_up: "Sign Up Now!"
@@ -94,6 +95,10 @@ en:
     user:
       delete_link: "Delete"
       confirm: "You sure?"
+    show:
+      prefix_count: "Microposts"
+    logged_in_user:
+      login_reminder: "Please Log In"
       
   sessions:
     new:
@@ -153,3 +158,31 @@ user_mailer:
       forgot_title: "Forgot pasword"
       heading: "Forgot password"
       forgot_submit: "Submit"
+
+  errors:
+    messages:
+      invalid_image_format: "must be a valid image format"
+      invalid_image_size: "should be less than 5 Mb"
+
+  shared:
+    micropost_form:
+      new_compose: "Compose new micropost..."
+      submit_post: "Post"
+      alert_mess: "Maximum file size is 5MB. Please choose a smaller file."
+    user_info:
+      profile_link: "view my profile"
+      suffix_count: micropost
+
+  microposts:
+    not_found: "Unable to find micropost"
+    create:
+      success_mess_created: "Micropost created!"
+      fail_mess_created: "Fail to create micropost!"
+    destroy:
+      success_mess_deleted: "Micropost deleted."
+      fail_mess_deleted: "Fail to delete micropost!"
+    micropost:
+      deleted_link: "Delete"
+      time_desc_a: "Posted"
+      time_desc_b: "ago."
+      deleted_confirm: "You sure?"

@@ -5,3 +5,4 @@ require('channels')
 require('channels')
 require('jquery')
 import 'bootstrap'
+require('./uploadImage')
