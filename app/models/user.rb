@@ -19,6 +19,8 @@ class User < ApplicationRecord
     length: { minimum: Settings.validations.password.min_length }, allow_nil: true
 
   has_secure_password
+
+  has_many :microposts, dependent: :destroy
   
   class << self
     def digest string
@@ -69,6 +71,10 @@ class User < ApplicationRecord
     reset_sent_at < Settings.collections.psword_reset_expired_time_in_hours
   end
 
+  def feed
+    microposts
+  end
+  
   private 
   
   def downcase_email

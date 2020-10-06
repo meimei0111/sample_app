@@ -20,6 +20,8 @@ validations:
     regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i'
   password:
     min_length: 6
+  content:
+    max_length: 140
 
 collections:
   session_controller_create: 1
@@ -28,4 +30,11 @@ collections:
       default: 80
       list: 50
   users_default_page: 10
+  microposts_default_page: 8
   psword_reset_expired_time_in_hours: 2
+
+image:
+  type: "image/jpeg image/gif image/png"
+  input: image/jpeg,image/gif,image/png
+  size: 5
+  resize: 500
