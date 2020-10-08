@@ -99,6 +99,13 @@ en:
       prefix_count: "Microposts"
     logged_in_user:
       login_reminder: "Please Log In"
+    follow:
+      submit_follow: "Follow"
+    unfollow:
+      submit_unfollow: "Unfollow"
+    show_follow:
+      microposts: "Microposts:"
+      profile: "view my profile"
       
   sessions:
     new:
@@ -171,10 +178,15 @@ user_mailer:
       alert_mess: "Maximum file size is 5MB. Please choose a smaller file."
     user_info:
       profile_link: "view my profile"
-      suffix_count: micropost
+      suffix_count: "micropost"
+    stats:
+      followers_html: <strong id="followers" class="stat"> %{count} </strong> Followers
+      following_html: <strong id="following" class="stat"> %{count} </strong> Following
 
   microposts:
     not_found: "Unable to find micropost"
+    user_not_found: "Invaild User"
+    not_detected: "Unable to detect"
     create:
       success_mess_created: "Micropost created!"
       fail_mess_created: "Fail to create micropost!"
@@ -186,3 +198,8 @@ user_mailer:
       time_desc_a: "Posted"
       time_desc_b: "ago."
       deleted_confirm: "You sure?"
+
+  relationships:
+    index:
+      followers: "Followers"
+      following: "Following" 

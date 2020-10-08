@@ -29,12 +29,14 @@ collections:
     size:
       default: 80
       list: 50
+      mini: 30
   users_default_page: 10
   microposts_default_page: 8
+  follower_default_page: 8
   psword_reset_expired_time_in_hours: 2
 
 image:
   type: "image/jpeg image/gif image/png"
   input: image/jpeg,image/gif,image/png
   size: 5
-  resize: 500
+  resize: 400 
